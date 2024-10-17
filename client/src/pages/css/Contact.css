@@ -1,0 +1,72 @@
+.fullContact{
+    margin: 0 20px;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.leftContact,.rightContact{
+    background-color: var(--prime);
+    backdrop-filter: blur(10px);
+    width: 50%;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.leftContact{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.leftContact>ul>li{
+    margin-left: 40px;
+}
+.leftContact>hr{
+    border: 1px solid var(--prime);
+}
+.rightContact{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.rightContact>form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.rightContact>form>input, select, textarea{
+    font-size: large;
+    border: 0;
+    outline: none;
+    padding: 5px 10px;
+    background-color: var(--prime);
+    border-radius: 5px;
+}
+.rightContact>form input::placeholder{
+    color: white;
+}
+.rightContact>form textarea::placeholder{
+    color: white;
+}
+.rightContact>form select{
+    color: white;
+    width: fit-content;
+    padding: 5px 10px;
+}
+.rightContact>form select option{
+    color: black;
+    background-color: rgba(0, 0, 0, 0.433);
+}
+.rightContact>form input:last-child{
+    background-color: rgba(0, 128, 0, 0.318);
+    color: white;
+}
+@media screen and (max-width: 900px) {
+    .fullContact{
+        flex-direction: column;
+    }
+    .leftContact, .rightContact{
+        width: 100%;
+    }
+    .rightContact>form select{
+        width: 100%;
+    }
+}

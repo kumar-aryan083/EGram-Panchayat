@@ -1,0 +1,45 @@
+.fullAddNotifi{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.fullAddNotifi>form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.fullAddNotifi>form>input{
+    font-size: 14px;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.609);
+    border: 0;
+    outline: none;
+    color: white;
+    border-radius: 10px;
+}
+.fullAddNotifi>form>input:focus{
+    font-size: 14px;
+    padding: 10px 20px;
+    background-color: var(--prime);
+    backdrop-filter: blur(10px);
+    border: 0;
+    outline: none;
+    color: black;
+}
+.fullAddNotifi>form>input::placeholder{
+    color: white;
+}
+.fullAddNotifi>form>input:last-child{
+    color: white;
+    width: fit-content;
+    background-color: rgba(0, 128, 0, 0.607);
+}
+.inpt{
+    display: flex;
+    gap: 20px;
+}
+.inpt>label{
+    display: flex;
+    margin: auto 0;
+    color: white;
+}

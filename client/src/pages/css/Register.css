@@ -1,0 +1,113 @@
+.fullRegisterPage {
+    display: flex;
+    height: fit-content;
+    gap: 10px;
+    padding: 0px 20px;
+}
+
+.registerUpper {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    gap: 10px;
+    width: 30%;
+}
+.registerLower{
+    flex-grow: 100;
+    height: 100;
+}
+.registerCard {
+    width: 100%;
+    backdrop-filter: blur(10px);
+    background-color: var(--prime);
+    padding: 25px 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.rCard {
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+    gap: 20px;
+    width: 100%;
+}
+
+.rCard > h1 {
+    font-size: 22px;
+    text-align: center;
+}
+
+.rCard > form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+}
+
+.rCard > form > input {
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.147);
+    border: 0;
+    outline: none;
+    padding: 5px 10px;
+    color: rgba(255, 255, 255, 0.702);
+}
+
+.rCard > form > input::placeholder {
+    color: white;
+}
+
+.rCard > form > input:last-child {
+    font-size: 16px;
+    background-color: rgba(68, 255, 0, 0.247);
+    border: 0;
+    outline: none;
+    padding: 5px 10px;
+}
+
+.registerInfo {
+    flex-grow: 100;
+    min-width: 60%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    background-color: var(--prime);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.registerInfo > ul > li {
+    margin-left: 40px;
+}
+
+.rlFirst {
+    background-color: var(--prime);
+    backdrop-filter: blur(10px);
+    padding: 10px 30px;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+.rlFirst > ul > li {
+    margin-left: 40px;
+}
+
+.rExtra{
+    margin: 0 20px;
+}
+@media screen and (max-width: 850px) {
+    .registerUpper {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .registerCard {
+        width: 100%;
+    }
+
+    .rCard {
+        width: 100%;
+    }
+}

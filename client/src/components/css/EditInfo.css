@@ -1,0 +1,96 @@
+.fullEditContent{
+    display: flex;
+    flex-direction: column;
+}
+.fullEditContent>hr{
+    margin: 10px 0;
+}
+.fecSubSection{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.eiLeft{
+    width: 20%;
+    margin: auto 0;
+} 
+.eiRight{
+    width: 70%;
+}
+.eiLeft>form, .eiRight>form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.eiLeft>form>input, .eiRight>form>input{
+    background-color: var(--prime);
+    border: 0;
+    outline: none;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+.eiRight{
+    margin: auto 0;
+}
+.previewImg{
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+}
+.previewImg>img{
+    width: 100%;
+}
+#hfHeading{
+    font-size: 26px;
+}
+.hfParagraph{
+    padding: 10px;
+}
+#hfImg{
+    padding: 0 0;
+}
+#hfImg::file-selector-button{
+    padding: 10px 10px;
+    background-color: rgba(0, 0, 0, 0.318);
+    border: 0;
+    backdrop-filter: blur(10px);
+}
+.uploadImg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.621);
+    justify-content: center;
+    align-items: center;
+}
+.uploadText{
+    display: flex;
+    color: white;
+    font-size: 22px;
+    gap: 20px;
+}
+.spinner{
+    width: 50px;
+    height: 50px;
+    border: 3px solid transparent;
+    border-top: 3px solid white;
+    border-radius: 50%;
+    animation: spin 0.3s linear infinite;
+}
+.uploadText>p{
+    margin: auto 0;
+}
+@keyframes spin {
+    to{
+        transform: rotate(360deg);
+    }
+}
+@media screen and (max-width:950px) {
+    .fecSubSection{
+        flex-direction: column;
+    }
+    .eiLeft,.eiRight{
+        width: 100%;
+    }
+}

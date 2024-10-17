@@ -1,0 +1,21 @@
+.fullDashboard{
+    padding: 0 0 0 5px;
+    display: flex;
+    padding: 0px 20px;
+    justify-content: space-between;
+}
+.sideNav{
+    width: calc(20% - 10px);
+}
+.contentSide{
+    width: 80%;
+}
+@media screen and (max-width: 950px) {
+    .fullDashboard{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .sideNav,.contentSide{
+        width: 100%;
+    }
+}

@@ -1,0 +1,218 @@
+.fullProfilePage{
+    margin: 10px 20px;
+    background-color: var(--prime);
+    backdrop-filter: blur(10px);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.bgGreen{
+    background-color: rgba(0, 128, 0, 0.606) !important;
+}
+.profileCard{
+    display: flex;
+    justify-content: space-between;
+}
+.pcLeft{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.dpImgCtrl{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+}
+.dpImgCtrl>img{
+    width: 100%;
+    height: 100%;
+    filter: opacity(0.6);
+    border-radius: 50%;
+}
+.pcMid{
+    margin: auto 0;
+    width: 30%;
+}
+.dpInfo{
+    text-align: center;
+}
+.pcRight{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.pBtns{
+    background-color: rgba(255, 0, 0, 0.318);
+    padding: 10px 15px;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    user-select: none;
+}
+.profileDp{
+    width: calc(100vw - 18px);
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: -116px;
+    left: -20px;
+    z-index: 9999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.profileDp1{
+    width: calc(100vw - 18px);
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: -116px;
+    left: -20px;
+    z-index: 9999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.popUpCard{
+    padding: 50px 20px;
+    background-color: var(--prime);
+    backdrop-filter: blur(10px);
+    width: fit-content;
+    border-radius: 10px;
+    width: 90%;
+}
+.popUpCard>hr{
+    border: 1px solid var(--prime);
+}
+.close{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-color: rgba(255, 0, 0, 0.318);
+    padding: 5px 10px;
+    color: white;
+    user-select: none;
+    cursor: pointer;
+}
+.popUpCard>form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.popUpCard>hr{
+    margin: 20px 10px;
+}
+.popUpCard>form>input{
+    background-color: rgba(0, 0, 0, 0.197);
+    color: white;
+    border: 0;
+    outline: none;
+    font-size: 22px;
+    width: 100%;
+    padding: 5px 10px;
+}
+.popUpCard>form>input::placeholder{
+    color: var(--prime);
+}
+.editDp{
+    position: absolute;   
+    bottom: 0px;
+    left: 0px;
+    padding: 5px 7px;
+    background-color: rgba(0, 0, 0, 0.624);
+    border-radius: 50%;
+    color: white;
+}
+.dpForm{
+    display: none;
+}
+.profileServices{
+    margin: 0 20px;
+    display: flex;
+    gap: 10px;
+    position: relative;
+}
+.psLeft, .psRight{
+    background-color: var(--prime);
+    backdrop-filter: blur(10px);
+    width: 50%;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.personPopUp{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.741);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.personInfoTable{
+    background-color: var(--prime);
+    padding: 30px 20px;
+    position: relative;
+    max-width: 80vw;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.personInfoTable>table>thead>tr>th{
+    background-color: rgba(255, 0, 0, 0.531);
+    color: white;
+    padding: 5px 20px;
+}
+.personInfoTable>table>tbody>tr>td{
+    color: white;
+    padding: 5px 40px 5px 10px;
+}
+.aBtns{
+    display: flex;
+    gap: 10px;
+}
+.aBtns>div{
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.perBtns{
+    background-color: rgba(0, 128, 0, 0.47);
+}
+.aBtn{
+    background-color: rgba(255, 0, 0, 0.527);
+}
+@media screen and (max-width: 1000px) {
+    .personInfoTable{
+        width: 80vw;
+    }
+    .profileServices{
+        flex-direction: column;
+    }
+    .psLeft, .psRight{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 750px) {
+    .profileCard{
+        flex-direction: column;
+        width: fit-content;
+        margin: auto;
+        gap: 10px;
+    }
+    .pcLeft, .pcMid, .pcRight{
+        width: 100%;
+    }
+    .pcLeft{
+        gap: 10px;
+    }
+    .pcMid{
+        text-align: center;
+    }
+}

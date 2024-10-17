@@ -1,0 +1,91 @@
+.fullDashHome{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.fdhContent{
+    display: flex;
+    justify-content: space-evenly;
+}
+.fdhLeft, .fdhRight{
+    width: 45%;
+    background-color: rgba(0, 0, 0, 0.527);
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+}
+.fdhLeft>ul, .fdhRight>ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 10px;
+}
+.fdhLeft>ul>li, .fdhRight>ul>li{
+    padding: 5px 10px;
+    background-color: var(--prime);
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.fdhLeft>ul>li>p, .fdhRight>ul>li>p{
+    margin: auto 0;
+}
+.infoBtn, .notifiBtn{
+    padding: 5px 15px;
+    background-color: rgba(0, 128, 0, 0.539);
+    user-select: none;
+    cursor: pointer;
+}
+.newBatch{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.newBatch>i{
+    font-size: 30px;
+    position: absolute;
+    animation: changeBg 1s linear infinite;
+}
+.newBatch>p{
+    position: relative;
+    z-index: 99;
+    color: black;
+    font-size: 10px;
+    transform: translate(0%, -10%);
+    animation: changeCol 1s linear infinite;
+}
+@keyframes changeCol {
+    0%{
+        color: white;
+    }
+    100%{
+        color: red;
+    }
+}
+@keyframes changeBg {
+    0%{
+        color: red;
+    }
+    100%{
+        color: white;
+    }
+}
+@media screen and (max-width:950px) {
+    .fdhContent{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .fdhLeft, .fdhRight{
+        width: 100%;
+    }
+}

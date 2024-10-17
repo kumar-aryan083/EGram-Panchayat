@@ -1,0 +1,30 @@
+.fullLoad{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.333);
+    gap: 20px;
+}
+.loading{
+    width: 70px;
+    height: 70px;
+    border: 4px solid transparent;
+    border-top: 4px solid var(--prime);
+    border-radius: 50%;
+    animation: spin 0.4s linear infinite;
+}
+.fullLoad>p{
+    color: var(--prime);
+    font-size: 22px;
+}
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}

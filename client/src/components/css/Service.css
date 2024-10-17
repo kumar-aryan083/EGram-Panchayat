@@ -1,0 +1,111 @@
+.serviceWarpper{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.serviceWrapper>hr{
+    border: 1px solid var(--prime);
+    margin: 10px 0;
+}
+.ssAction{
+    display: flex;
+    justify-content: space-between;
+}
+.metaInfo{
+    display: flex;
+    gap: 10px;
+}
+.ssInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+}
+.adminBtns{
+    display: flex;
+    gap: 10px;
+}
+.applyBtn{
+    padding: 10px 15px;
+    background-color: green;
+    color: rgba(255, 255, 255, 0.754);
+    font-weight: 700;
+    user-select: none;
+    cursor: pointer;
+}
+.editBtn{
+    padding: 10px 15px;
+    background-color: rgba(212, 255, 0, 0.2);
+    color: rgba(255, 255, 255, 0.754);
+    font-weight: 700;
+    user-select: none;
+    cursor: pointer;
+}
+.deleteBtn{
+    padding: 10px 15px;
+    background-color: rgba(255, 0, 0, 0.644);
+    color: rgba(255, 255, 255, 0.754);
+    font-weight: 700;
+    user-select: none;
+    cursor: pointer;
+}
+.allServiceBars{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-height: 240px;
+    max-height: 400px;
+    height: fit-content;
+    overflow: auto;
+}
+.allServiceBars::-webkit-scrollbar{
+    display: none;
+}
+.singleService{
+    display: flex;
+    gap: 10px;
+}
+.ssImgCtrl{
+    width: 20%;
+    height: fit-content;
+    margin: auto;
+}
+.ssImgCtrl>img{
+    width: 100%;
+    filter: opacity(0.6);
+}
+.alternateText{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--prime);
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 900px) {
+    .singleService{
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .ssImgCtrl{
+        width: 100%;
+    }
+    .ssInfo{
+        width: 100%;
+    }
+    .ssAction{
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+    .metaInfo{
+        flex-direction: column;
+    }
+    .adminBtns{
+        flex-direction: column;
+        text-align: center;
+    }
+}

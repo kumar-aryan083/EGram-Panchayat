@@ -1,0 +1,55 @@
+.homeCard{
+    display: flex;
+    gap: 10px;
+}
+.hcImgCtrl{
+    width: 200px;
+    height: 120px;
+    margin: auto 0;
+}
+.hcImgCtrl>img{
+    width: 100%;
+    height: 100%;
+    filter: opacity(0.6);
+}
+.hcInfo{
+    width: calc(100% - 200px);
+}
+.hcMeta{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.vacInfo{
+    display: flex;
+    gap: 20px;
+}
+.tVac, .aVac, .actionBtn{
+    padding: 10px 20px;
+}
+.tVac{
+    background-color: rgba(255, 0, 0, 0.318);
+}
+.aVac{
+    background-color: rgba(255, 255, 0, 0.318);
+}
+.actionBtn{
+    background-color: rgba(0, 128, 0, 0.318);
+}
+@media screen and (max-width: 950px) {
+    .homeCard{
+        flex-direction: column;
+        border: 1px solid rgba(255, 255, 255, 0.433);
+        padding: 10px;
+    }
+    .hcImgCtrl, .hcInfo{
+        width: 100%;
+    }
+    .hcMeta{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .actionBtn{
+        text-align: center;
+    }
+}
