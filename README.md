@@ -1,33 +1,34 @@
-﻿## Blog Website
+﻿## EGram Panchayat
 
-This is a full-stack blog web application where admin can create, read, update, and delete (CRUD) blog posts. Users can view, like, dislike, comment on a post. The application also supports pagination for blog posts and allows filtering by categories and admin has access to manage categories. Email is sent on registration and otp should be submitted to verify admin and form replys are also handled by email.
+This is a full-stack web application where admins can create, read, update, and delete (CRUD) schemes. Users can apply to these schemes, and their applications can be approved by the admin or staff. The application includes an approval workflow where the admin or staff can review, approve, or reject user applications.
 
-### Deployment:
+## Features:
 
-The application is deployed and accessible at https://aryandevs-webblog.netlify.app/
+- **CRUD for Schemes:** Admins can create, read, update, and delete schemes.
+- **User Applications:** Users can apply to available schemes.
+- **Approval Workflow:** Admin or staff can approve or reject user applications.
+- **Responsive Design:** Ensures that the platform is usable across various devices and screen sizes.
 
-### Features:
-
-- *CRUD:* Admin can create, read, update, delete all the blogs and categories.
-- *Email verification:* Admin should verify their email at the time of registration.
-- *Category wise:* There is an option for category wise blogs as well as recent blogs.
-- *Responsive Design:* Ensures the website is accessible and usable across various devices and screen sizes.
-
-### Tech Stack:
+## Tech Stack:
 
 - **Frontend:** React, HTML, CSS, JavaScript
 - **Backend:** Node.js, Express
 - **Databases:** MongoDB, Firebase
-  
-### Getting Started:
 
-1. clone the Repository locally
-2. create your env and add data according to env.example
-3. create firebase.js in client and insert your firebase config in this file
-4. run npm install in client and server both
-5. run npm run dev in client
-6. run npm start in server
+## Deployment:
 
-### Contributions:
+The application is deployed and accessible at [Insert Deployment URL]
+
+## Getting Started:
+
+1. Clone the repository locally.
+2. Create your `.env` file and add data according to the provided `.env.example`.
+3. Set up Firebase in the `client` folder by creating `firebase.js` and adding your Firebase configuration.
+4. Add your firabase config in `backend` folder as well where it has been used.
+5. Run `npm install` in both the client and server folders.
+6. Start the development server for the client with `npm run dev`.
+7. Start the backend server with `npm start` in the server folder.
+
+## Contributions:
 
 Contributions are welcome! If you encounter any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
