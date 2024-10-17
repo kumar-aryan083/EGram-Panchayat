@@ -2,6 +2,10 @@
 
 This is a full-stack web application where admins can create, read, update, and delete (CRUD) schemes. Users can apply to these schemes, and their applications can be approved by the admin or staff. The application includes an approval workflow where the admin or staff can review, approve, or reject user applications.
 
+## Deployment:
+
+The application is deployed and accessible at [Insert Deployment URL]
+
 ## Features:
 
 - **CRUD for Schemes:** Admins can create, read, update, and delete schemes.
@@ -14,10 +18,6 @@ This is a full-stack web application where admins can create, read, update, and 
 - **Frontend:** React, HTML, CSS, JavaScript
 - **Backend:** Node.js, Express
 - **Databases:** MongoDB, Firebase
-
-## Deployment:
-
-The application is deployed and accessible at [Insert Deployment URL]
 
 ## Getting Started:
 
