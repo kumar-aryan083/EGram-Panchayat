@@ -21,7 +21,7 @@ const dbConn = () => {
     })
 }
 const corsAllows = {
-    origin: 'http://192.168.1.9:5173',
+    origin: 'http://localhost:5173',
     methods: 'PUT, PATCH, GET, POST, UPDATE, DELETE',
     credentials: true
 }
@@ -35,9 +35,15 @@ app.use('/api/user', userRouter);
 app.use('/api/services', serviceRouter);
 app.use('/api/com', comRouter);
 
+app.get('/', (req, res) => {
+    res.status(200).json({
+        success: true,
+        message: 'server is running'
+    })
+})
 
 app.listen(process.env.PORT, (err) => {
-    if(err) {
+    if (err) {
         console.log('Error in Server....')
     } else {
         dbConn();
